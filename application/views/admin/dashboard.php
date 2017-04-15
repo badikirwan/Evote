@@ -9,34 +9,36 @@
 
 	<!-- Global stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
-	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/core.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/components.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo base_url();?>assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo base_url();?>assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo base_url();?>assets/css/core.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo base_url();?>assets/css/components.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo base_url();?>assets/css/colors.css" rel="stylesheet" type="text/css">
 	<!-- /global stylesheets -->
 
 	<!-- Core JS files -->
-	<script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
-	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/ui/nicescroll.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/ui/drilldown.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/ui/fab.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/js/plugins/loaders/pace.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/js/core/libraries/bootstrap.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/js/plugins/loaders/blockui.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/js/plugins/ui/nicescroll.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/js/plugins/ui/drilldown.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/js/plugins/ui/fab.min.js"></script>
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script type="text/javascript" src="assets/js/plugins/visualization/d3/d3.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/forms/styling/switchery.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/ui/moment/moment.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/pickers/daterangepicker.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/js/plugins/visualization/d3/d3.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/js/plugins/pickers/daterangepicker.js"></script>
 
-	<script type="text/javascript" src="assets/js/core/app.js"></script>
-	<script type="text/javascript" src="assets/js/pages/dashboard.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/js/core/app.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/js/pages/dashboard.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/js/plugins/tables/datatables/datatables.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/js/pages/datatables_basic.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -50,7 +52,7 @@
 		<div class="navbar navbar-inverse navbar-transparent">
 
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+				<a class="navbar-brand" href="index.html"><img src="<?php echo base_url();?>assets/images/logo_light.png" alt=""></a>
 
 				<ul class="nav navbar-nav pull-right visible-xs-block">
 					<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-grid3"></i></a></li>
@@ -71,8 +73,8 @@
 								<a href="#"><i class="icon-people"></i> User pages</a>
 								<ul class="dropdown-menu width-200">
 									<li class="dropdown-header highlight">Basic</li>
-									<li><a href="user_pages_cards.html">Lihat Data</a></li>
-									<li><a href="user_pages_list.html">Tambah Data</a></li>
+									<li><a href="<?php echo base_url('home/list_user');?>">Lihat Data</a></li>
+									<li><a href="<?php echo base_url('home/add_user');?>">Tambah Data</a></li>
 								</ul>
 							</li>
 							<li class="dropdown-submenu">
@@ -146,7 +148,7 @@
 						</li>
 						<li class="dropdown dropdown-user">
 							<a class="dropdown-toggle" data-toggle="dropdown">
-								<img src="assets/images/placeholder.jpg" alt="">
+								<img src="<?php echo base_url();?>assets/images/placeholder.jpg" alt="">
 								<span>Victoria</span>
 								<i class="caret"></i>
 							</a>
@@ -342,76 +344,7 @@
 
 			<!-- Main content -->
 			<div class="content-wrapper">
-
-				<!-- Main charts -->
-				<div class="row">
-					<div class="col-lg-6">
-
-
-
-					</div>
-
-					<div class="col-lg-6">
-
-						<!-- Sales stats -->
-
-						<!-- /sales stats -->
-
-					</div>
-				</div>
-				<!-- /main charts -->
-
-
-				<!-- Dashboard content -->
-				<div class="row">
-					<div class="col-lg-8">
-
-
-
-
-
-
-
-
-
-
-					</div>
-
-					<div class="col-lg-4">
-
-						<!-- Progress counters -->
-						<div class="row">
-							<div class="col-md-6">
-
-
-							</div>
-
-							<div class="col-md-6">
-
-
-							</div>
-						</div>
-						<!-- /progress counters -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-					</div>
-				</div>
-				<!-- /dashboard content -->
-
+			<?php echo $contents; ?>
 			</div>
 			<!-- /main content -->
 

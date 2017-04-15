@@ -8,7 +8,7 @@ class M_auth extends CI_Model {
   }
 
 	public function user($data) {
-		$query = $this->db->get_where('users', $data);
+		$query = $this->db->get_where('akun', $data);
     return $query;
 	}
 
