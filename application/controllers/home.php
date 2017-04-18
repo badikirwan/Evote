@@ -2,6 +2,11 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Home extends CI_Controller {
+	
+	public function __construct() {
+		parent::__construct();
+		$this->load->model('m_admin');
+	}
 
 	public function index() {
 		$user = $this->session->userdata('username');
@@ -27,6 +32,10 @@ class Home extends CI_Controller {
 		$this->template->load('admin/dashboard', 'admin/list_user');
 	}
 
+	public function add_kandidat() {
+		$this->template->load('admin/dashboard', 'admin/add_kandidat');
+	}
+	
 	public function signout() {
 		$this->session->sess_destroy('username');
 		$this->session->set_flashdata('sukses', 'Terimakasih telah menggunakan aplikasi ini');
