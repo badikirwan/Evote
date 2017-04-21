@@ -29,7 +29,7 @@ class Signin extends CI_Controller {
         $sess_data['user_id']   = $sess->user_id;
         $sess_data['username']  = $sess->username;
         $sess_data['nama']      = $sess->nama;
-        $sess_data['level']     = $sess->level;
+        $sess_data['akses']     = $sess->akses;
         $this->session->set_userdata($sess_data);
       }
         redirect('home');
